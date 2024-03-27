@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { saveBook } from "../../Utility/LocalStorage";
 
 const BookDetails = () => {
 
@@ -18,6 +19,9 @@ const BookDetails = () => {
     const [wishlistStatus, setWishlistStatus] = useState(false);
     
     const handleApplyBook = () => {
+
+        saveBook(idInt);
+
         if (wishlistStatus) {
             setReadStatus(true)
             toast.success('Added to read list');
@@ -26,7 +30,6 @@ const BookDetails = () => {
             toast.success('Added to read list');
         }
     };
-
     const handleWhishlist = () => {
         if (readStatus) {
             toast.error('You have already read this book');
@@ -41,7 +44,7 @@ const BookDetails = () => {
         <div>
             <h2>Book details of: {bookId} </h2>
 
-            <div className="md:container lg:mx-[30px] my-12 mx-5 lg:mx-auto">
+            <div className="md:container my-12 mx-5 lg:mx-auto">
                 <div className="gap-x-12">
                     <div className="card card-side bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-2 ">
                         <div className="p-20 rounded-2xl bg-[#1313130D] ">

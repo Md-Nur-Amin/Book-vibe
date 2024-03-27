@@ -11,7 +11,7 @@ const Book = ({ book }) => {
 
         <div>
             <Link to={`/book/${bookId}`}>
-                <div className="">
+                <div className="md:container mx-2 lg:mx-[40px] mb-14">
                     <div className="p-6 border rounded-2xl">
                         <div className="bg-[#1313130D] rounded-2xl p-8 " >
                             <div className="card">
