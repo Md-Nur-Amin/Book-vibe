@@ -42,8 +42,6 @@ const BookDetails = () => {
 
     return (
         <div>
-            <h2>Book details of: {bookId} </h2>
-
             <div className="md:container my-12 mx-5 lg:mx-auto">
                 <div className="gap-x-12">
                     <div className="card card-side bg-base-100 shadow-xl grid grid-cols-1 lg:grid-cols-2 ">
@@ -64,7 +62,7 @@ const BookDetails = () => {
                                 <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {lastTag}</div>
                             </div>
                             <hr className="bg-[#13131326] " />
-
+        
                             <div className="gap-x-16" >
                                 <h3 className="text-[#131313B3] font-semibold my-3">Number of Pages: <span className="text-[#131313] lg:ml-16"> {book.totalPages}</span> </h3>
 
