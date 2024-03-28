@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { saveBook } from "../../Utility/LocalStorage";
+import { saveWishlist } from "../../Utility/WishlistStorage";
 
 const BookDetails = () => {
 
@@ -31,6 +32,8 @@ const BookDetails = () => {
         }
     };
     const handleWhishlist = () => {
+
+        saveWishlist(idInt)
         if (readStatus) {
             toast.error('You have already read this book');
         } else {
@@ -38,6 +41,8 @@ const BookDetails = () => {
             toast.success('Book added to wishlist');
         }
     };
+
+
 
 
     return (
