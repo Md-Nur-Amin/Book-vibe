@@ -38,9 +38,6 @@ const ListedBooks = () => {
 
 
 
-
-
-
     const books = useLoaderData();
     const [appliedBooks, setAppliedBooks] = useState([]);
     const [displayBooks, setDisplayBooks] = useState([]);

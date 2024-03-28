@@ -22,7 +22,7 @@ const Header = () => {
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {links}
                         </ul>
-                    </div>
+                    </div> <img className=" h-[32px] w-[32px] lg:h-[64px] lg:w-[64px] " src="../../../Image/books.png" alt="" />
                     <a className="btn btn-ghost text-[16px] text-[#131313] font-bold lg:text-3xl ">Book Vibe</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
