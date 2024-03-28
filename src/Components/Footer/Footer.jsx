@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-base-200 text-base-content">
                 <aside className="grid grid-cols-1 ">
-                    <h2><img src="../../../Image/books.png" alt="" /> </h2>
+                    <h2><img src="../../assets/Image/books.png" alt="" /> </h2>
                     <p className="font-bold lg:text-[18px] lg:mb-3">Book Vibe Ltd.</p>
                     <p className="font-bold lg:text-[18px]">Providing reliable tech since 1992</p>
                 </aside>

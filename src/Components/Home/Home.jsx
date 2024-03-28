@@ -13,7 +13,7 @@ const Home = () => {
                         <Link className="mb-6 btn bg-[#23BE0A] border-0" to="/listedBooks" >View The List</Link>
                     </div>
                     <div className="lg:ml-20">
-                        <img className=" h-[180px] w-[150px] lg:h-[394px] lg:w-[318px] " src="../../../Image/Playbook.png" alt="" />
+                        <img className=" h-[180px] w-[150px] lg:h-[394px] lg:w-[318px] " src="../../assets/Image/Playbook.png" alt="" />
                     </div>
                 </div>
             </div>
