@@ -111,7 +111,7 @@ const ListedBooks = () => {
             <h2>Books added to wishllist: {appliedWish.length}</h2> */}
 
             <div className="flex mx-4 lg:mx-[50px] ">
-                <button onClick={handleReadBooksClick} className="btn">Read Books</button>
+                <button onClick={handleReadBooksClick} role="tablist" className="btn">Read Books</button>
                 <button onClick={handleWishlistBooksClick} className="btn">Wishlist Books</button>
             </div>
 

@@ -60,11 +60,11 @@ const BookDetails = () => {
                             <hr className="bg-[#13131326] my-4" />
                             <h3 className="text-[#131313CC] font-medium text-xl" >{book.category} </h3>
                             <hr className="bg-[#13131326] my-4" />
-                            <h3 className="font-normal text-[#131313B3] " > <span className="font-bold text-[#131313] "> Review: </span> {book.review} </h3>
+                            <h3 className="font-normal text-[#131313B3] " > <span className="font-bold text-[#131313] "> Review: </span> <span className="text-[#131313B3] "> {book.review}</span> </h3>
 
                             <div className="card-actions my-8 lg:mt-12"> <span className="font-bold text-[#131313] text-[16px] mr-4 ">Tag</span>
-                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {firsTag}</div>
-                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {lastTag}</div>
+                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] py-3 px-4"> {firsTag}</div>
+                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] py-3 px-4"> {lastTag}</div>
                             </div>
                             <hr className="bg-[#13131326] " />
         
@@ -80,8 +80,8 @@ const BookDetails = () => {
 
 
                             <div className="card-actions justify-start">
-                                <button onClick={handleApplyBook} className="btn ">Read</button>
-                                <button onClick={handleWhishlist} className="btn bg-[#50B1C9] text-white">Wishlist </button>
+                                <button onClick={handleApplyBook} className="btn border-[#1313134D] px-7 ">Read</button>
+                                <button onClick={handleWhishlist} className="btn bg-[#50B1C9] text-white px-7 ">Wishlist </button>
                             </div>
                         </div>
                     </div>

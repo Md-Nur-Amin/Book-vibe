@@ -21,8 +21,8 @@ const Book = ({ book }) => {
 
                         <div className="card-body">
                             <div className="card-actions justify-start">
-                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {firsTag}</div>
-                                <div className="badge badge-outline text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {lastTag}</div>
+                                <div className="badge badge-outline py-3 px-4 text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {firsTag}</div>
+                                <div className="badge badge-outline py-3 px-4 text-[#23BE0A] bg-[#23BE0A0D] font-medium text-[16px] "> {lastTag}</div>
                             </div>
 
                             <h2 className="card-title my-4"> {bookName} </h2>
@@ -32,7 +32,7 @@ const Book = ({ book }) => {
 
                             <div className="flex gap-x-32">
                                 <p className="text-[#131313CC] font-medium card-title">{category}</p>
-                                <p className="flex gap-1"> {rating}<CiStar /></p>
+                                <p className="flex gap-1"> {rating} <CiStar className="mt-1" /></p>
                             </div>
                         </div>
                     </div>
